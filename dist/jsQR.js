@@ -140,8 +140,8 @@ var GenericGF = /** @class */ (function () {
         for (var i = 0; i < this.size - 1; i++) {
             this.logTable[this.expTable[i]] = i;
         }
-        this.zero = new GenericGFPoly_1.default(this, Uint8ClampedArray.from([0]));
-        this.one = new GenericGFPoly_1.default(this, Uint8ClampedArray.from([1]));
+        this.zero = new GenericGFPoly_1.default(this, new Uint8ClampedArray([0]));
+        this.one = new GenericGFPoly_1.default(this, new Uint8ClampedArray([1]));
     }
     GenericGF.prototype.multiply = function (a, b) {
         if (a === 0 || b === 0) {
